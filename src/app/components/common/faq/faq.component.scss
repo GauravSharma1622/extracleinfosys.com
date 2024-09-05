@@ -1,0 +1,143 @@
+.faq-area {
+    position: relative;
+    z-index: 1;
+}
+.faq-image {
+    margin-right: 15px;
+    height: 100%;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    img {
+        display: none;
+    }
+}
+.faq-content {
+    padding-left: 15px;
+
+    .sub-title {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--primaryColor);
+        font: {
+            family: var(--headingFontFamily);
+            size: var(--fontSize);
+            weight: 500;
+        };
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    .accordion {
+        margin-top: 35px;
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .faq-image {
+        background-image: unset !important;
+        height: auto;
+        margin: {
+            right: 0;
+            bottom: 25px;
+        };
+        img {
+            display: inline-block;
+        }
+    }
+    .faq-content {
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+        .accordion {
+            margin-top: 20px;
+        }
+    }
+    .shape2 {
+        &.d-none {
+            &.d-block {
+                display: none !important;
+            }
+        }
+    }
+
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .faq-image {
+        background-image: unset !important;
+        height: auto;
+        margin: {
+            right: 0;
+            bottom: 25px;
+        };
+        img {
+            display: inline-block;
+        }
+    }
+    .faq-content {
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .accordion {
+            margin-top: 25px;
+        }
+    }
+    .shape2 {
+        &.d-none {
+            &.d-block {
+                display: none !important;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .faq-image {
+        margin-right: 0;
+    }
+    .faq-content {
+        padding-left: 0;
+
+        .accordion {
+            margin-top: 25px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

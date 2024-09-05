@@ -1,0 +1,70 @@
+<div class="services-details-area pb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12">
+        <div class="services-details-sidebar">
+          <div class="story">
+            <img src="assets/img/services/services6.jpg" alt="success-story">
+            <button type="button" class="popup-video" (click)="ngxSmartModalService.getModal('popupOne').open()">
+              Watch Video
+            </button>
+          </div>
+          <div class="quote">
+            “I used to be really shy, and I didn’t know how to deal with all of the drama in high school.”
+            <br>
+            <br>
+            “Pinnacle gave me the confidence to succeed in this World.”
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-3 col-6">
+              <div class="single-funfacts-box">
+                <p>We have clients in</p>
+                <h3>68</h3>
+                <p>countries</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-3 col-6">
+              <div class="single-funfacts-box">
+                <p>Successful work with</p>
+                <h3>750</h3>
+                <p>clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12">
+        <div class="services-details-desc">
+          <h3>We are an employee-owned management consulting</h3>
+          <p>Extracle Infosys provides innovative online training and career support programs for students looking to start or
+            advance their professions in a variety of technological and business domain fields. We specialize in
+            providing students practical real world knowledge and skills that are required for success in the modern
+            Information Technology industry. Our experienced professionals take inspiration from Extracle Infosys,” the Japanese
+            God of wisdom, and their expertise spans a diverse range of techno functional spaces.</p>
+          <p>With Extracle Infosys, students receive affordable, hands-on, superior training in the areas of business analysis,
+            quality analysis, project management, niche software products, and industry domain knowledge. Our services
+            are ideal for working professionals looking to diversify their skillsets, change jobs, college students in
+            need of additional training to jumpstart their careers or corporations that need a training partner for
+            their employees.</p>
+          <h3>How can we help you?</h3>
+          <ul>
+            <li>Differentiate yourself from competition via hands on expertise and domain knowledge</li>
+            <li>Increase your longevity on contracts and make yourself indispensable in your job</li>
+            <li>Demand the pay and promotions you deserve backed with practical knowledge</li>
+            <li>Amplify your value as a BA/QA/PM/Development manager with business domain knowledge</li>
+            <li>Make yourself recession and outsourcing proof</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup">
+  <ngx-smart-modal #popupOne [identifier]="'popupOne'">
+    <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </ngx-smart-modal>
+</div>

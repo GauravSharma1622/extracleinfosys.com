@@ -1,0 +1,229 @@
+<!-- Page Title -->
+<div class="page-title-area">
+  <div class="container">
+    <div class="page-title-content">
+      <h1>Python Developer</h1>
+      <ul>
+        <li>
+          <a routerLink="/">
+            Home
+          </a>
+        </li>
+        <li>
+          <a routerLink="/courses">
+            Courses
+          </a>
+        </li>
+        <li>Python</li>
+      </ul>
+    </div>
+  </div>
+  <div class="shape4"><img src="assets/img/shape//shape5.png" alt="shape"></div>
+  <div class="shape5"><img src="assets/img/shape//shape6.png" alt="shape"></div>
+</div>
+
+<!-- Portfolio Details Area -->
+<div class="portfolio-details-area ptb-100">
+  <div class="container">
+    <div class="portfolio-details-image-slides">
+      <owl-carousel-o [options]="portfolioDetailsImageSlides">
+        <ng-template carouselSlide>
+          <div class="image">
+            <img src="assets/img/portfolio/portfolio1.jpg" alt="portfolio">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="image">
+            <img src="assets/img/portfolio/portfolio2.jpg" alt="portfolio">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="image">
+            <img src="assets/img/portfolio/portfolio3.jpg" alt="portfolio">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="image">
+            <img src="assets/img/portfolio/portfolio4.jpg" alt="portfolio">
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+    <div class="portfolio-details-info">
+      <ul>
+        <li>
+          <span>Trainer:</span>
+
+        </li>
+        <li>
+          <span>Location:</span>
+          New York, USA
+        </li>
+        <li>
+          <span>Started Batch:</span>
+          April 2023
+        </li>
+        <li>
+          <span>Timeframe:</span>
+          2 Months
+        </li>
+        <li>
+          <span>Website:</span>
+          <a>Online | Offline | Corporate Training</a>
+        </li>
+      </ul>
+    </div>
+    <div class="portfolio-details-desc">
+      <h4>About course : Python</h4>
+      <p>The DataScience/Python Program is an intense bootcamp offering a complete suite of software development skills.
+      </p>
+      <h4>Course Content</h4>
+      <p>Course content are given below:</p>
+    </div>
+
+    <div class="faq-area ptb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="faq-image" style="background-image: url(assets/img/faq.jpg);">
+              <img src="assets/img/faq.jpg" alt="faq-image">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="faq-content">
+              <div class="accordion mt-0">
+                <accordion>
+                  <accordion-group heading="PHASE-1 => Python" [isOpened]="true">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li>Introduction of Python</li>
+                          <li>String methods</li>
+                          <li>List</li>
+                          <li>Flow control</li>
+                          <li>Python file operation</li>
+                          <li>Directory</li>
+                          <li>Date and time in python</li>
+                          <li>Python Inheritance</li>
+                          <li>Iteraor, Genrator, Closure</li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li>Data types</li>
+                          <li>Operators</li>
+                          <li>Hash maps </li>
+                          <li>Introduction to VS code</li>
+                          <li>Reading and writing a file</li>
+                          <li>Exception handling</li>
+                          <li>Introduction to OOPS</li>
+                          <li>Operator overloading</li>
+                          <li>JSON, PIP</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </accordion-group>
+                  <accordion-group heading="PHASE-2 => API">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li>What are API</li>
+                          <li>Framework vs module</li>
+                          <li>Writing your first API</li>
+                          <li>Designing API structure</li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li>Static vs dynamic websites</li>
+                          <li>Request and response</li>
+                          <li>Request methods</li>
+                          <li>Postman</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </accordion-group>
+                  <accordion-group heading="PHASE-3 => Django Framework">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li>Installing django</li>
+                          <li>Base files in django</li>
+                          <li>Migrations</li>
+                          <li>Branching strategy</li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li>Running django server</li>
+                          <li>Architecture</li>
+                          <li>Git management</li>
+                          <li>User management</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </accordion-group>
+                  <accordion-group heading="PHASE-4 => DataBase">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li><strong>Adding database</strong></li>
+                          <li><strong>Models and DB relation</strong></li>
+                          <li><strong>Primary key and foreign key reference</strong></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li><strong>Table plus for sqlite db</strong></li>
+                          <li><strong>CRUD operation</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </accordion-group>
+                  <!-- <accordion-group heading="What is your social media strategy?">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua consectetur ipsum dolor sit amet adipiscing elit.</p>
+                  </accordion-group>
+                  <accordion-group heading="What does Qian Consulting do?">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua consectetur ipsum dolor sit amet adipiscing elit.</p>
+                  </accordion-group> -->
+                  <accordion-group heading="Real Hands on with Ecommerce websites">
+                    <p>Designing a system design for ecommerce</p>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li><strong>User models</strong></li>
+                          <li><strong>OTP validation</strong></li>
+                          <li><strong>Generating authentication token</strong></li>
+                          <li><strong>Address management for user</strong></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <ul>
+                          <li><strong>Signup</strong></li>
+                          <li><strong>Login</strong></li>
+                          <li><strong>Token management from DB</strong></li>
+                          <li><strong>User management</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </accordion-group>
+                  <!-- <accordion-group heading="Cloud – Application Deployment on Cloud">
+                    <p>AWS Cloud</p>
+                    <p>What is AWS</p>
+                    <p>Introduction to AWS Services</p>
+                    <p>Amazon Cloud Services</p>
+                    <p>Create EC2 Instance in AWS</p>
+                    <p>Deploy Spring Boot Application on AWS</p>
+                    <p>AWS Advanced Research and Development- Live Deployment</p>
+                  </accordion-group> -->
+                </accordion>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

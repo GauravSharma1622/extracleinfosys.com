@@ -1,0 +1,87 @@
+<div
+    class="blog-area pt-100 pb-75"
+    style="background-image: url(assets/img/bg4.jpg);"
+    [ngClass]="{'bg-image': router.url === '/index-2'}"
+    [ngClass]="{'bg-white': router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">NEWS</span>
+            <h2>Our Latest Insights</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="image">
+                        <a routerLink="/blog-details" class="d-block">
+                            <img src="assets/img/blog/blog1.jpg" alt="blog-image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <ul class="meta">
+                            <li>
+                                <i class="flaticon-date"></i> 22 June, 2022
+                            </li>
+                            <li>
+                                <i class="flaticon-user"></i> By <a routerLink="/blog-grid">Admin</a>
+                            </li>
+                        </ul>
+                        <h3><a routerLink="/blog-details">Top Tips for Starting a Booming Consulting Business</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <a routerLink="/blog-details" class="link-btn">
+                            Read More <i class="flaticon-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="image">
+                        <a routerLink="/blog-details" class="d-block">
+                            <img src="assets/img/blog/blog2.jpg" alt="blog-image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <ul class="meta">
+                            <li>
+                                <i class="flaticon-date"></i> 21 June, 2022
+                            </li>
+                            <li>
+                                <i class="flaticon-user"></i> By <a routerLink="/blog-grid">Admin</a>
+                            </li>
+                        </ul>
+                        <h3><a routerLink="/blog-details">Why You Should be Hiring On-Demand Talent Consultant</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <a routerLink="/blog-details" class="link-btn">
+                            Read More <i class="flaticon-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="image">
+                        <a routerLink="/blog-details" class="d-block">
+                            <img src="assets/img/blog/blog3.jpg" alt="blog-image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <ul class="meta">
+                            <li>
+                                <i class="flaticon-date"></i> 20 June, 2022
+                            </li>
+                            <li>
+                                <i class="flaticon-user"></i> By <a routerLink="/blog-grid">Admin</a>
+                            </li>
+                        </ul>
+                        <h3><a routerLink="/blog-details">Top Habits Every Consultant Should Develop Everyday</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <a routerLink="/blog-details" class="link-btn">
+                            Read More <i class="flaticon-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

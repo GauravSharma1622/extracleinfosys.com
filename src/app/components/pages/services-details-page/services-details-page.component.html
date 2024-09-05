@@ -1,0 +1,101 @@
+<!-- Page Title -->
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <span class="sub-title">SERVICES DETAILS</span>
+            <h1>Marketing Planning</h1>
+            <ul>
+                <li>
+                    <a routerLink="/">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/services">
+                        Services
+                    </a>
+                </li>
+                <li>Marketing Planning</li>
+            </ul>
+        </div>
+    </div>
+    <div class="shape4"><img src="assets/img/shape//shape5.png" alt="shape"></div>
+    <div class="shape5"><img src="assets/img/shape//shape6.png" alt="shape"></div>
+</div>
+
+<!-- Services Details Area -->
+<div class="services-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div class="services-details-sidebar">
+                    <div class="story">
+                        <img src="assets/img/services/services6.jpg" alt="success-story">
+                        <button type="button" class="popup-video" (click)="ngxSmartModalService.getModal('popupOne').open()">
+                            Watch Video
+                        </button>
+                    </div>
+                    <div class="quote">
+                        “I used to be really shy, and I didn’t know how to deal with all of the drama in high school.”
+                        <br>
+                        <br>
+                        “Qian gave me the confidence to succeed in this World.”
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-3 col-6">
+                            <div class="single-funfacts-box">
+                                <p>We have clients in</p>
+                                <h3>68</h3>
+                                <p>countries</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-3 col-6">
+                            <div class="single-funfacts-box">
+                                <p>Successful work with</p>
+                                <h3>750</h3>
+                                <p>clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="services-details-desc">
+                    <h3>We are an employee-owned management consulting</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <a routerLink="/">cupidatat</a> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum minim veniam.</p>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <ul>
+                        <li>A lack of understanding of business and customer insights</li>
+                        <li>Uncertainty about current or future market realities</li>
+                        <li>An overall lack of business agility across employees and technology</li>
+                        <li>Difficulty innovating or quickly launching new capabilities</li>
+                        <li>Poor strategy execution and value realization</li>
+                        <li>A culture of complacency or change fatigue</li>
+                    </ul>
+                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
+                    <p>It is a long established fact that a <strong>reader</strong> will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribut ion of letters, as opposed to using 'Content here, content here', making it look like readable.</p>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like aldu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup">
+    <ngx-smart-modal #popupOne [identifier]="'popupOne'">
+        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ngx-smart-modal>
+</div>
+
+<app-how-it-works></app-how-it-works>
+
+<app-pricing></app-pricing>
+
+<app-funfacts></app-funfacts>
+
+<app-partner></app-partner>
+
+<div class="pb-100">
+    <app-subscribe></app-subscribe>
+</div>

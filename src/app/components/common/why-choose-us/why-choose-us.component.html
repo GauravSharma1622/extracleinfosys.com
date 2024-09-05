@@ -1,0 +1,61 @@
+<div class="why-choose-us-area ptb-100" style="background-image: url(assets/img/bg3.jpg);"
+  [ngClass]="{'bg-f9f9f9': router.url === '/index-2' || router.url === '/index-3'}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12">
+        <div class="why-choose-us-content">
+          <span class="sub-title">WHY CHOOSE US</span>
+          <h2>Dream until your Dream Come True</h2>
+          <p>Extracle Infosys has been awarded with the trust of organisations and individuals in the IT industry due to the
+            value that we bring to the table.</p>
+          <ul class="features-list">
+            <li>
+              <img src="assets/img/check.png" alt="check">
+              <h3>Integrity</h3>
+              <p>Create and deliver products faster with KuebikoIT DevOps services and automation.</p>
+            </li>
+            <li>
+              <img src="assets/img/check.png" alt="check">
+              <h3>Excellence</h3>
+              <p>We deliver excellence throughout the service continuum. Our strategy and hard work minimize and/or
+                eliminate errors and possible losses for our customers.</p>
+            </li>
+            <li>
+              <img src="assets/img/check.png" alt="check">
+              <h3>Passion</h3>
+              <p>Our passion is finding talented people and putting them in appropriate positions. Talent produces
+                high-value ROI and creates opportunities via expertise, experience and Innovation.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="request-quote-form">
+          <h2>Request A Quote</h2>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Your Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Your Phone" class="form-control">
+            </div>
+            <div class="form-group">
+              <select class="form-select">
+                <option selected>Your Subject</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <button type="submit" class="default-btn">Submit Now <i class="flaticon-right"></i></button>
+          </form>
+          <img src="assets/img/shape/shape.png" alt="shape" class="shape">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="d-none" [ngClass]="{'d-block': router.url === '/index-2' || router.url === '/index-3'}">
+</div>

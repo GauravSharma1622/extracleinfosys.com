@@ -1,0 +1,131 @@
+<!-- Page Title -->
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h1>Shopping Cart</h1>
+            <ul>
+                <li>
+                    <a routerLink="/">
+                        Home
+                    </a>
+                </li>
+                <li>Cart</li>
+            </ul>
+        </div>
+    </div>
+    <div class="shape4"><img src="assets/img/shape//shape5.png" alt="shape"></div>
+    <div class="shape5"><img src="assets/img/shape//shape6.png" alt="shape"></div>
+</div>
+
+<!-- Cart Area -->
+<div class="cart-area ptb-100">
+    <div class="container">
+        <div class="empty-cart text-center" *ngIf="products.length == 0; else cartForm">
+            <p>Your cart is currently empty.</p>
+            <a routerLink="/products" class="default-btn">
+                Return to Shop
+                <i class="flaticon-shopping-cart"></i>
+            </a>
+        </div>
+        <ng-template #cartForm>
+            <form>
+                <div class="cart-table table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">PRODUCT DETAILS</th>
+                                <th scope="col">UNIT PRICE</th>
+                                <th scope="col">QUANTITY</th>
+                                <th scope="col">TOTAL</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let product of products">
+                                <td class="product-thumbnail">
+                                    <a [routerLink]="['/product', product.slug]">
+                                        <img [src]="product.image" alt="item">
+                                        <h3>{{product.title}}</h3>
+                                    </a>
+                                </td>
+                                <td>
+                                    {{product.currencyType
+                                    }}{{product.currentPrice}}
+                                </td>
+                                <td class="product-quantity">
+                                    <div class="input-counter">
+                                        <span
+                                            class="minus-btn"
+                                            (click)="
+                                                minus(product.id)
+                                            "
+                                        >
+                                            <i class="bx bx-minus"></i>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            value="{{
+                                                product.quantity
+                                            }}"
+                                        />
+                                        <span
+                                            class="plus-btn"
+                                            (click)="
+                                                plus(product.id)
+                                            "
+                                        >
+                                            <i class="bx bx-plus"></i>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    ${{
+                                        (
+                                            product.quantity *
+                                            product.currentPrice
+                                        ).toFixed(2)
+                                    }}
+                                </td>
+                                <td>
+                                    <button
+                                        (click)="
+                                            onDeleteItem(product.id)
+                                        "
+                                        class="remove"
+                                    >
+                                        <i class='bx bx-trash-alt'></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-buttons">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12 col-md-7">
+                            <div class="shopping-coupon-code">
+                                <input type="text" class="form-control" placeholder="Coupon code" name="coupon-code" id="coupon-code">
+                                <button type="submit">Apply Coupon</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-12 col-md-5">
+                            <div class="cart-totals">
+                                <ul>
+                                    <li>Subtotal <span>${{total}}</span></li>
+                                    <li>Shipping <span>$00.00</span></li>
+                                    <li>Total <span>${{total}}</span></li>
+                                </ul>
+                                <a
+                                    routerLink="/checkout"
+                                    class="default-btn"
+                                >
+                                    Proceed to Checkout <i class="flaticon-shopping-cart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </ng-template>
+    </div>
+</div>
